@@ -1,5 +1,5 @@
 {
-  "name": "refactor-imports-js",
+  "name": "refactor-js-imports",
   "version": "0.1.0",
   "description": "Refactor imports of renamed files.",
   "main": "index.js",
