@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/david.almeida/.nvm/versions/node/v8.9.4/bin/node',
+1 verbose cli   '/Users/david.almeida/.nvm/versions/node/v8.9.4/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v8.9.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/david.almeida/Projects/refactor-renamed-imports',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/david.almeida/.npm/refactor-imports/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/david.almeida/.npm correctMkdir not in flight; initializing
+10 info lifecycle refactor-imports@1.0.0~prepublish: refactor-imports@1.0.0
+11 silly lifecycle refactor-imports@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/david.almeida/.npm/refactor-imports/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/david.almeida/Projects/refactor-renamed-imports' ]
+13 verbose tarball /Users/david.almeida/.npm/refactor-imports/1.0.0/package.tgz
+14 verbose folder /Users/david.almeida/Projects/refactor-renamed-imports
+15 verbose addLocalTarball adding from inside cache /Users/david.almeida/.npm/refactor-imports/1.0.0/package.tgz
+16 verbose correctMkdir /Users/david.almeida/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd refactor-imports@1.0.0
+18 verbose afterAdd /Users/david.almeida/.npm/refactor-imports/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/david.almeida/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/david.almeida/.npm/refactor-imports/1.0.0/package/package.json written
+21 silly publish { name: 'refactor-imports',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Refactor imports of renamed files.',
+21 silly publish   main: 'index.js',
+21 silly publish   bin: { 'refactor-imports': './bin/refactor-imports.js' },
+21 silly publish   keywords:
+21 silly publish    [ 'refactor',
+21 silly publish      'rename',
+21 silly publish      'renamed',
+21 silly publish      'files',
+21 silly publish      'imports',
+21 silly publish      'javascript' ],
+21 silly publish   author: { name: 'David Almeida', email: 'davidbarna@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies:
+21 silly publish    { '@s-ui/helpers': '1',
+21 silly publish      babylon: '6.18.0',
+21 silly publish      colors: '1.2.1',
+21 silly publish      commander: '2.9.0',
+21 silly publish      'refactoring-codemods': '0.3.2',
+21 silly publish      'simple-git': '1.92.0' },
+21 silly publish   readme: '# refactor-imports\n\n> Lib and CLI to refactor imports of renamed files.\n\n## Usage\n\n### Run command on all packages\n# refactor-imports\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'be2a18a4b450f967ee56b22043fa16860ee9532f',
+21 silly publish   _id: 'refactor-imports@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: 'f96f702506a185dd68e4407244e56dc98cc8a1f1',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name refactor-imports
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'refactor-imports',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'refactor-imports',
+26 silly mapToRegistry   name: 'refactor-imports',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/refactor-imports
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/david.almeida/.npm/refactor-imports/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/refactor-imports
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 13:21:25
+33 verbose request using bearer token for auth
+34 verbose request id fc455df9d6c86813
+35 http request PUT https://registry.npmjs.org/refactor-imports
+36 http 403 https://registry.npmjs.org/refactor-imports
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '78',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 30 Mar 2018 11:21:26 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-mad9447-MAD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1522408885.302811,VS0,VE810',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/david.almeida/.npm/registry.npmjs.org/refactor-imports on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: refactor-imports cannot be republished until 24 hours have passed. : refactor-imports
+40 verbose stack     at makeError (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:126:13)
+40 verbose stack     at Request.emit (events.js:214:7)
+40 verbose stack     at Request.<anonymous> (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:116:13)
+40 verbose stack     at Request.emit (events.js:211:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/david.almeida/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid refactor-imports
+43 verbose cwd /Users/david.almeida/Projects/refactor-renamed-imports
+44 error Darwin 17.4.0
+45 error argv "/Users/david.almeida/.nvm/versions/node/v8.9.4/bin/node" "/Users/david.almeida/.nvm/versions/node/v8.9.4/bin/npm" "publish"
+46 error node v8.9.4
+47 error npm  v3.10.10
+48 error code E403
+49 error refactor-imports cannot be republished until 24 hours have passed. : refactor-imports
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

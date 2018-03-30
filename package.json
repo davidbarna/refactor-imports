@@ -1,0 +1,27 @@
+{
+  "name": "refactor-imports-js",
+  "version": "0.1.0",
+  "description": "Refactor imports of renamed files.",
+  "main": "index.js",
+  "bin": {
+    "refactor-imports": "./bin/refactor-imports.js"
+  },
+  "keywords": [
+    "refactor",
+    "rename",
+    "renamed",
+    "files",
+    "imports",
+    "javascript"
+  ],
+  "author": "David Almeida <davidbarna@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@s-ui/helpers": "1",
+    "babylon": "6.18.0",
+    "colors": "1.2.1",
+    "commander": "2.9.0",
+    "refactoring-codemods": "0.3.2",
+    "simple-git": "1.92.0"
+  }
+}
