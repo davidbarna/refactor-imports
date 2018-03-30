@@ -2,7 +2,7 @@
   "name": "refactor-js-imports",
   "version": "0.1.1",
   "description": "Refactor imports of renamed files.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "bin": {
     "refactor-imports": "./bin/refactor-imports.js"
   },
